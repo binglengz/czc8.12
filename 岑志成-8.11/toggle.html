@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#box{
+				width: 100px;
+				height: 100px;
+				background: red;
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<button>按钮</button>
+		<br><br>
+		<div id="box">
+			
+		</div>
+<script src="jquery191.min.js"></script>
+<script>
+$(function(){
+	$("button").mouseenter(function(){
+		$("#box").toggle()		
+	});	
+	$("button").mouseleave(function(){
+		$("#box").toggle()
+	});	
+});
+</script>		
+	</body>
+</html>
